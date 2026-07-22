@@ -562,6 +562,55 @@
     }
     .svc-fact dd { font-size: 13px; color: var(--black); line-height: 1.45; }
     .svc-card .cta-btn { margin-top: auto; width: 100%; }
+    .svc-badge {
+      background: var(--accent);
+      color: white;
+      font-family: 'Syne', sans-serif;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      padding: 5px 10px;
+    }
+    .svc-price {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding-top: 14px;
+      margin-top: 4px;
+      border-top: 1px solid var(--border);
+    }
+    .svc-price .old {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      color: var(--mid);
+      text-decoration: line-through;
+      text-decoration-color: #c9c9c2;
+    }
+    .svc-price .new {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 26px;
+      letter-spacing: -0.02em;
+      color: var(--black);
+    }
+    .svc-price .period {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 12px;
+      color: var(--mid);
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
 
     /* ════════════════════════════════════════════
        COME FUNZIONA
@@ -944,6 +993,7 @@
       <article class="svc-card reveal" id="svc-makeover">
         <div class="svc-head">
           <span class="svc-lever">Profilo</span>
+          <span class="svc-badge">Early Bird</span>
         </div>
         <h3>Linked<span class="up">Up</span><br>Extreme Makeover</h3>
         <p class="svc-desc">
@@ -963,6 +1013,11 @@
             <dd>Ottimizzazione completa del profilo, sezione per sezione</dd>
           </div>
         </dl>
+        <div class="svc-price">
+          <span class="old"><span class="sr-only">Prezzo pieno: </span>99€</span>
+          <span class="new">47€</span>
+          <span class="period">una tantum</span>
+        </div>
         <a href="https://mariomorrone.gumroad.com/l/linkedup-extreme-makeover"
            target="_blank" rel="noopener"
            class="cta-btn"
@@ -975,6 +1030,7 @@
       <article class="svc-card reveal" id="svc-contentflow">
         <div class="svc-head">
           <span class="svc-lever">Contenuti</span>
+          <span class="svc-badge">Early Bird</span>
         </div>
         <h3>Linked<span class="up">Up</span><br>Content Flow</h3>
         <p class="svc-desc">
@@ -994,6 +1050,11 @@
             <dd>20 post al mese con copy e immagine, pronti all'uso</dd>
           </div>
         </dl>
+        <div class="svc-price">
+          <span class="old"><span class="sr-only">Prezzo pieno: </span>399€</span>
+          <span class="new">199€</span>
+          <span class="period">al mese</span>
+        </div>
         <a href="https://mariomorrone.gumroad.com/l/linkedup-content-flow"
            target="_blank" rel="noopener"
            class="cta-btn"
@@ -1006,6 +1067,7 @@
       <article class="svc-card reveal" id="svc-outreach">
         <div class="svc-head">
           <span class="svc-lever">Network</span>
+          <span class="svc-badge">Early Bird</span>
         </div>
         <h3>Linked<span class="up">Up</span><br>Outreach</h3>
         <p class="svc-desc">
@@ -1025,6 +1087,11 @@
             <dd>Sistema automatizzato pronto all'uso e flow di messaggi costruiti per il target</dd>
           </div>
         </dl>
+        <div class="svc-price">
+          <span class="old"><span class="sr-only">Prezzo pieno: </span>1199€</span>
+          <span class="new">699€</span>
+          <span class="period">al mese</span>
+        </div>
         <a href="https://tally.so/r/Y5y2qB" target="_blank" rel="noopener" class="cta-btn" data-track="svc_outreach">
           Scopri Outreach<span class="arrow" aria-hidden="true"></span>
         </a>
